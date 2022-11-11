@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { AnimatePresence } from "framer-motion";
 
 export default function Menu(){
 
@@ -12,6 +12,7 @@ export default function Menu(){
     path[0] = "/"
     console.log(path)
     return(
+        <AnimatePresence exitBeforeEnter>
         <section className="menu">
             <ul>
             {list.map((item,i)=>{
@@ -23,5 +24,6 @@ export default function Menu(){
             })}
             </ul>
         </section>
+        </AnimatePresence>
     )
 }

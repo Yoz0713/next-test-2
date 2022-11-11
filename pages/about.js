@@ -1,9 +1,14 @@
 import ImageBox2 from '../components/about'
+import { motion } from "framer-motion";
 export default function About(){
     return(
-        <section className='about'>
+        <motion.section className='about'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 3 }}>
             <ImageBox2/>
-        </section>
+        </motion.section>
      
     )
 }

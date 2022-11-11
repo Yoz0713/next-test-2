@@ -1,11 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import ImageBox from '../components/home'
+import { motion } from "framer-motion";
 export default function Home(){
     return(
-        <section className='home'>
+        <motion.section className='home'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 3 }}>
             <ImageBox/>
-        </section>
+        </motion.section>
      
     )
 }
