@@ -1,0 +1,15 @@
+.portfolio{
+    .box1{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+        padding: 5vw;
+        flex-wrap: wrap;
+        img{
+            margin: 1vw 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
